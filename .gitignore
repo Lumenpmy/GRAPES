@@ -1,0 +1,14 @@
+*
+!/**/
+!*.*
+
+__pycache__/
+*.py[cod]
+.DS_Store
+.vscode/
+data/*
+*.ipynb_checkpoints/
+*.exe
+*.txt
+.idea
+*.model
