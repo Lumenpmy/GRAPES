@@ -1,5 +1,8 @@
 # GRAPES:Genarative Reinforcement for Adversarial PE Evasion System
 
+The flowchart of GRAPES is as follows.
+![flowchart of GRAPES](GRAPES_Model_Diagram.png)
+
 ## MalwareRL Gym Environment
 MalwareRL exposes `gym` environments for both Ember and MalConv to allow researchers to develop Reinforcement Learning agents to bypass Malware Classifiers. Actions include a variety of non-breaking (e.g. binaries will still execute) modifications to the PE header, sections, imports and overlay and are listed below.
 
@@ -19,7 +22,7 @@ ACTION_TABLE = {
     'remove_debug': 'remove_debug',
     'modify_optional_header': 'modify_optional_header',
     'modify_timestamp': 'modify_timestamp',
-    'break_optional_header_checksum': 'break_optional_header_checksum'
+    'break_optional_header_checksum': 'break_optional_header_checksum',
 }
 ```
 
@@ -31,7 +34,7 @@ A baseline agent `RandomAgent` is provided to demonstrate how to interact w/ `gy
 
 Additional agents will be developed and made available (both model and code) in the coming weeks.
 
-**Table 1:** _Evasion Rate against VireuShare Holdout Dataset_*
+**Table 1:** _Evasion Rate against VirueShare Holdout Dataset_*
 | gym | agent | evasion_rate | avg_ep_len |
 | --- | ----- | ------------ | ---------- |
 | malconv | RandomAgent | 88.5% | 16.33
@@ -65,16 +68,7 @@ Finally install the Python3 dependencies in the `requirements.txt`.
 - Fang, Zhiyang, et al. "Evading anti-malware engines with deep reinforcement learning." IEEE Access 7 (2019): 48867-48879. ([paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8676031))
 
 ## Acknowledges
+- Gym-Malware Environment: https://github.com/endgameinc/gym-malware. 
+- Zayd Hammoudeh's (https://github.com/ZaydH/MalwareGAN) work. 
 
 
-
-### Blog Posts
-- [Evading Machine Learning Malware Classifiers: for fun and profit!](https://towardsdatascience.com/evading-machine-learning-malware-classifiers-ce52dabdb713)
-- [Cylance, I Kill You!](https://skylightcyber.com/2019/07/18/cylance-i-kill-you/)
-- [Machine Learning Security Evasion Competition 2020](https://msrc-blog.microsoft.com/2020/06/01/machine-learning-security-evasion-competition-2020-invites-researchers-to-defend-and-attack/)
-- [ML evasion contest – the AV tester’s perspective](https://www.mrg-effitas.com/research/machine-learning-evasion-contest-the-av-testers-perspective/)
-
-### Talks
-- 42: The answer to life the universe and everything offensive security by Will Pearce, Nick Landers ([slides](https://github.com/moohax/Talks/blob/master/slides/DerbyCon19.pdf))
-- Bot vs. Bot: Evading Machine Learning Malware Detection by Hyrum Anderson ([slides](https://www.blackhat.com/docs/us-17/thursday/us-17-Anderson-Bot-Vs-Bot-Evading-Machine-Learning-Malware-Detection.pdf))
-- Trying to Make Meterpreter into an Adversarial Example by Andy Applebaum ([slides](https://www.camlis.org/2019/talks/applebaum))
