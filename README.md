@@ -1,14 +1,4 @@
-# MalwareRL
-> Malware Bypass Research using Reinforcement Learning
-
-## Background
-This is a malware manipulation environment using OpenAI's gym environments. The core idea is based on paper "Learning to Evade Static PE Machine Learning Malware Models via Reinforcement Learning"
-([paper](https://arxiv.org/abs/1801.08917)). I am extending the original repo because:
-1. It is no longer maintained
-2. It uses Python2 and an outdated version of LIEF
-3. I wanted to integrate new Malware gym environments and additional manipulations
-
-Over the past three years there have been breakthrough open-source projects published in the security ML space. In particular, [Ember](https://github.com/endgameinc/ember) (Endgame Malware BEnchmark for Research) ([paper](https://arxiv.org/abs/1804.04637)) and MalConv: Malware detection by eating a whole exe ([paper](https://arxiv.org/abs/1710.09435)) have provided security researchers the ability to develop sophisticated, reproducible models that emulate features/techniques found in NGAVs.
+# GRAPES:Genarative Reinforcement for Adversarial PE Evasion System
 
 ## MalwareRL Gym Environment
 MalwareRL exposes `gym` environments for both Ember and MalConv to allow researchers to develop Reinforcement Learning agents to bypass Malware Classifiers. Actions include a variety of non-breaking (e.g. binaries will still execute) modifications to the PE header, sections, imports and overlay and are listed below.
@@ -73,15 +63,8 @@ Finally install the Python3 dependencies in the `requirements.txt`.
 `pip3 install -r requirements.txt`
 
 ## References
-The are a bunch of good papers/blog posts on manipulating binaries to evade ML classifiers. I compiled a few that inspired portions of this project below. Also, I have inevitably left out other pertinent reseach, so if there is something that should be in here let me know in an Git Issue or hit me up on Twitter ([@filar](https://twitter.com/filar)).
-### Papers
-- Demetrio, Luca, et al. "Efficient Black-box Optimization of Adversarial Windows Malware with Constrained Manipulations." arXiv preprint arXiv:2003.13526 (2020). ([paper](https://arxiv.org/abs/2003.13526))
-- Demetrio, Luca, et al. "Adversarial EXEmples: A Survey and Experimental Evaluation of Practical Attacks on Machine Learning for Windows Malware Detection." arXiv preprint arXiv:2008.07125 (2020). ([paper](https://arxiv.org/abs/2008.07125))
-- Song, Wei, et al. "Automatic Generation of Adversarial Examples for Interpreting Malware Classifiers." arXiv preprint arXiv:2003.03100 (2020).
- ([paper](https://arxiv.org/abs/2003.03100))
-- Suciu, Octavian, Scott E. Coull, and Jeffrey Johns. "Exploring adversarial examples in malware detection." 2019 IEEE Security and Privacy Workshops (SPW). IEEE, 2019. ([paper](https://arxiv.org/abs/1810.08280))
-- Fleshman, William, et al. "Static malware detection & subterfuge: Quantifying the robustness of machine learning and current anti-virus." 2018 13th International Conference on Malicious and Unwanted Software (MALWARE). IEEE, 2018. ([paper](https://arxiv.org/abs/1806.04773))
-- Pierazzi, Fabio, et al. "Intriguing properties of adversarial ML attacks in the problem space." 2020 IEEE Symposium on Security and Privacy (SP). IEEE, 2020. ([paper/code](https://s2lab.kcl.ac.uk/projects/intriguing/))
+- Anderson, Hyrum S., et al. "Learning to evade static pe machine learning malware models via reinforcement learning." arXiv preprint arXiv:1801.08917 (2018).([paper](https://arxiv.org/abs/1801.08917))
+- Hu, W., & Tan, Y. (2022, November). Generating adversarial malware examples for black-box attacks based on GAN. In International Conference on Data Mining and Big Data (pp. 409-423). Singapore: Springer Nature Singapore.([paper](https://link.springer.com/chapter/10.1007/978-981-19-8991-9_29))
 - Fang, Zhiyang, et al. "Evading anti-malware engines with deep reinforcement learning." IEEE Access 7 (2019): 48867-48879. ([paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8676031))
 
 ### Blog Posts
