@@ -54,9 +54,9 @@ To get `malware_rl` up and running you will need the follow external dependencie
 
 **Note:** The helper script `download_deps.py` can be used as a quickstart to get most of the key dependencies setup.
 
-I used a [conda](https://docs.conda.io/en/latest/) env set for Python3.7:
+I used a [conda](https://docs.conda.io/en/latest/) env set for Python3.8:
 
-`conda create -n malware_rl python=3.7`
+`conda create -n grapes python=3.8`
 
 Finally install the Python3 dependencies in the `requirements.txt`.
 
