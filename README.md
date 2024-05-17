@@ -19,9 +19,7 @@ ACTION_TABLE = {
     'remove_debug': 'remove_debug',
     'modify_optional_header': 'modify_optional_header',
     'modify_timestamp': 'modify_timestamp',
-    'break_optional_header_checksum': 'break_optional_header_checksum',
-    'upx_unpack': 'upx_unpack',
-    'upx_pack': 'upx_pack'
+    'break_optional_header_checksum': 'break_optional_header_checksum'
 }
 ```
 
@@ -33,10 +31,9 @@ A baseline agent `RandomAgent` is provided to demonstrate how to interact w/ `gy
 
 Additional agents will be developed and made available (both model and code) in the coming weeks.
 
-**Table 1:** _Evasion Rate against Ember Holdout Dataset_*
+**Table 1:** _Evasion Rate against VireuShare Holdout Dataset_*
 | gym | agent | evasion_rate | avg_ep_len |
 | --- | ----- | ------------ | ---------- |
-| ember | RandomAgent | 89.2% | 8.2
 | malconv | RandomAgent | 88.5% | 16.33
 
 \
@@ -66,6 +63,10 @@ Finally install the Python3 dependencies in the `requirements.txt`.
 - Anderson, Hyrum S., et al. "Learning to evade static pe machine learning malware models via reinforcement learning." arXiv preprint arXiv:1801.08917 (2018).([paper](https://arxiv.org/abs/1801.08917))
 - Hu, W., & Tan, Y. (2022, November). Generating adversarial malware examples for black-box attacks based on GAN. In International Conference on Data Mining and Big Data (pp. 409-423). Singapore: Springer Nature Singapore.([paper](https://link.springer.com/chapter/10.1007/978-981-19-8991-9_29))
 - Fang, Zhiyang, et al. "Evading anti-malware engines with deep reinforcement learning." IEEE Access 7 (2019): 48867-48879. ([paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8676031))
+
+## Acknowledges
+
+
 
 ### Blog Posts
 - [Evading Machine Learning Malware Classifiers: for fun and profit!](https://towardsdatascience.com/evading-machine-learning-malware-classifiers-ce52dabdb713)
